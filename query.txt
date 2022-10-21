@@ -54,7 +54,7 @@ AND `year` = '1'
 
 SELECT *
 FROM `exams`
-WHERE `date` = `20/06/2020`
+WHERE `date` = `2020-06-20`
 AND HOUR(`hour`) >= 14
 
 
@@ -92,4 +92,4 @@ WHERE `level` = 'magistrale';
  8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
 SELECT COUNT(`id`) FROM `teachers`
-WHERE `phone` IS NOT NULL;
+WHERE `phone` IS NULL;
